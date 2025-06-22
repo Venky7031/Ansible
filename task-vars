@@ -3,7 +3,7 @@
   connection: local
   vars: 
    STUDENT: venky
-   AGE: 25
+   AGE: 25years
    COURSE: mca
   tasks:
   - name: print the student details
