@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars: 
-   student name: venky
+   student: venky
    age: 25
    course: mca
   tasks:
   - name: print the student details
-    msg: "hello {{ student name }}, age {{ age }}, course {{ course }}"
+    msg: "hello {{ student }}, age {{ age }}, course {{ course }}"
