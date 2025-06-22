@@ -1,2 +1,14 @@
-[mongodb]
-mongodb.daws84s.site
+- name: configugaring mongodb server
+  become: yes
+  hosts: mongodb
+  tasks:
+  - name: copy mongodb repo
+    ansible.builtin.debug:
+      src: mongo.repo
+      dest: /etc/yum.repos.d/mongo.repo
+
+  - name: install mongobd server
+    ansible.builtin.debug:
+    - name: mongodb-org
+      state: present
+      
