@@ -7,4 +7,5 @@
    course: mca
   tasks:
   - name: print the student details
-    msg: "hello {{ student }}, age {{ age }}, course {{ course }}"
+    ansible.builtin.debug:
+    msg: "hello {{ student }}, age: {{ age }}, course {{ course }}"
