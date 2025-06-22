@@ -12,7 +12,7 @@
     CONCEPTS: # This is map or directory or object refferred as {}
       CI: Jenkins
       SCRIPTING: "shell, ansible, terraform, python"
-      taks:
-      - name: print the course information
-        ansible.builtin.debug:
-          msg: "course is: {{ COURSE }}, duration is {{ DURATION }, is live?: {{ IS_LIVE }}, Tools are: {{TOOLS}}, concepts are: {{CONCEPTS}}"
+    tasks:
+    - name: print the course information
+      ansible.builtin.debug:
+        msg: "course is: {{ COURSE }}, duration is {{ DURATION }, is live?: {{ IS_LIVE }}, Tools are: {{TOOLS}}, concepts are: {{CONCEPTS}}"
