@@ -4,9 +4,9 @@
   vars:
     NUMBER: 78
   tasks:
-  - name: Given number is grater than or equal to 100
+  - name: Given number is grater than 100
     ansible.builtin.debug:
-      msg: " Given number is: {{ Number }} is grater than or equal to 100 "
+      msg: " Given number is: {{ Number }} is grater than 100 "
     when: NUMBER < 100
 
   - name: Given number is less than or equal to 100
