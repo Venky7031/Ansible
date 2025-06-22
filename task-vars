@@ -8,4 +8,4 @@
   tasks:
   - name: print the student details
     ansible.builtin.debug:
-    msg: "hello {{ student }}, age: {{ age }}, course {{ course }}"
+    msg: "hello {{ student }}, student age: {{ age }}, course is {{ course }}"
