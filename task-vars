@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars: 
-   student: venky
-   age: 25
-   course: mca
+   STUDENT: venky
+   AGE: 25
+   COURSE: mca
   tasks:
   - name: print the student details
     ansible.builtin.debug:
-    msg: "hello {{ student }}, student age: {{ age }}, course is {{ course }}"
+    msg: "hello {{ STUDENT }}, student age: {{ AGE }}, course is {{ COURSE }}"
