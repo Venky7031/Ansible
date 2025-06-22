@@ -1,4 +1,4 @@
-- name: data types
+- name: ansible data types
   hosts: local
   connection: local
   vars:
@@ -14,5 +14,5 @@
       SCRIPTING: "shell, ansible, terraform, python"
       taks:
       - name: print the course information
-        msg: "course is: {{ COURSE }}, duration is {{ DURATION }, is live?: {{ IS_LIVE }}, Tools are: {{TOOLS}}, concepts are: {{CONCEPTS}}"
-        
+        ansible.builtin.debug:
+          msg: "course is: {{ COURSE }}, duration is {{ DURATION }, is live?: {{ IS_LIVE }}, Tools are: {{TOOLS}}, concepts are: {{CONCEPTS}}"
