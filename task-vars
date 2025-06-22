@@ -1,0 +1,10 @@
+- name: task level variables
+  hosts: local
+  connection: local
+  vars: 
+  student name: venky
+  age: 25
+  course: mca
+  tasks:
+  - name: print the student details
+    msg: "hello {{ student name }}, age {{ age }}, course {{ mca }}"
