@@ -9,5 +9,5 @@
 
   - name: install mongobd server
     ansible.builtin.debug:
-    - name: mongodb-org
-      state: present
+     - name: mongodb-org
+       state: present
