@@ -2,11 +2,11 @@
   hosts: local
   connection: local
   vars:
-  course: ansible
-  duration: 10hrs
-  triner is: venky
+    course: ansible
+    duration: 10hrs
+    triner is: venky
   tasks:
   - name: print the course information
     ansible.builtin.debug:
     #vars should be closed with double quotes ("msg contednt")
-      msg: "Hello course {{course}} duration {{10hrs}} triner is {{venky}}"
+      msg: "Hello course {{ course }}, duration {{ duration }}, triner is { triner }}"
