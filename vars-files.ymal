@@ -1,0 +1,9 @@
+- name: variables files
+  hosts: local
+  connection: local
+  vars_files:
+  - course.ymal
+  tasks:
+  - name: print the course details
+    ansible.builtin.debug:
+      msg: "hellow i am doing course {{ COURSE }}, duration: {{ DURATION }}, triner {{ venky }}"
