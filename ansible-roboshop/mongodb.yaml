@@ -11,4 +11,3 @@
     ansible.builtin.debug:
     - name: mongodb-org
       state: present
-      
