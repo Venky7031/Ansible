@@ -9,4 +9,4 @@
   - name: print the course information
     ansible.builtin.debug:
     #vars should be closed with double quotes ("msg contednt")
-      msg: "Hello course {{ course }}, duration {{ duration }}, triner is { triner }}"
+      msg: "Hello {{ course }}, duration: {{ duration }}, triner is { triner }}"
