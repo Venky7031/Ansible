@@ -8,5 +8,5 @@
   tasks:
   - name: print the course information
     ansible.builtin.debug:
-    #vars should be closed with double quotes ("msg contednt")
-      msg: "Hello {{ COURSE }}, course duration: {{ DURATION }}, triner is { TRINER }}"
+    #vars should be closed with double quotes ("msg content")
+      msg: "Hello {{ COURSE }}, course duration: {{ DURATION }}, triner is { Venky }}"
