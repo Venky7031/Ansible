@@ -2,10 +2,10 @@
   hosts: frontend
   become: yes
   tasks:
-  - name: disable nginx default module
+  - name: disable default nginx
     ansible.builtin.command: dnf module disable nginx -y
 
-  - name: enable nginx 1.24
+  - name: enable nginx
     ansible.builtin.command: dnf module enable nginx:1.24 -y
 
   - name: install nginx
@@ -21,12 +21,12 @@
 
   - name: remove html directory
     ansible.builtin.file:
-      path: /usr/share/nginx/html/
+      path: /usr/share/nginx/html
       state: absent
 
-  - name: crate html directory
+  - name: create html directory
     ansible.builtin.file:
-      path: /usr/share/nginx/html/
+      path: /usr/share/nginx/html
       state: directory
 
   - name: download frontend code
@@ -36,8 +36,8 @@
 
   - name: unzip frontend code
     ansible.builtin.unarchive:
-      src: /tmp/frontend.zip 
-      dest: /usr/share/nginx/html 
+      src: /tmp/frontend.zip
+      dest: /usr/share/nginx/html
       remote_src: yes
 
   - name: remove default nginx conf
