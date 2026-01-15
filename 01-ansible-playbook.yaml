@@ -1,5 +1,5 @@
-- name: ping the server
-  hosts: frontend
-  tasks:
+- name: ping the server  #playbook name
+  hosts: frontend   #which server your going to target
+  tasks:  #list of tasks
   - name: ping the server
-    ansible.builtin.ping:
+    ansible.builtin.ping:  #ansible module for ping

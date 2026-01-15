@@ -1,0 +1,7 @@
+- name: print hello world
+  hosts: local
+  connections: local  #no need to give password bez it is in local server
+  tasks:
+  - name: print the hello world
+    amsible.builtin.debug:
+      msg: "hello world"
